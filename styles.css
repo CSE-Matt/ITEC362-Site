@@ -1,0 +1,192 @@
+/* ==================== Global Styles ==================== */
+body {
+  margin: 0;                         /* Remove default margin */
+  font-family: Arial, sans-serif;    /* Set a clean, readable font */
+  background-color: #3498db;         /* Light blue background for the site */
+  color: #000;                        /* Default text color */
+}
+
+/* ==================== Header / Navigation ==================== */
+header {
+  display: flex;
+  flex-direction: column;            /* Stack logo and nav vertically */
+  align-items: center;               /* Center horizontally */
+  background-color: #0b3d5c;         /* Dark blue header */
+  padding: 2rem 1rem;                /* Top/bottom and left/right padding */
+  color: white;                      /* Text color in header */
+}
+
+header .logo {
+  font-size: 2.5rem;                 /* Large logo font */
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;                     /* Horizontal navigation links */
+  flex-wrap: wrap;                   /* Wrap to next line if needed */
+  gap: 1.5rem;                       /* Space between links */
+  margin-top: 0.75rem;               /* Space below logo */
+}
+
+header nav a, .dropbtn {
+  font-size: 2rem;                   /* Larger clickable text */
+  color: white;
+  text-decoration: none;             /* Remove underline */
+  background: none;                  /* Remove default button background */
+  border: none;                      /* Remove button border */
+  cursor: pointer;                   /* Pointer on hover */
+}
+
+header input[type="text"] {
+  padding: 0.3rem;                   /* Input box padding */
+  border-radius: 4px;                /* Rounded corners */
+  border: none;                      /* Remove default border */
+}
+
+/* ==================== Dropdown Menu ==================== */
+.dropdown {
+  position: relative;                /* Needed for absolute positioning of dropdown */
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;                     /* Hidden by default */
+  position: absolute;                /* Position below button */
+  background-color: #0b3d5c;         /* Match header color */
+  min-width: 180px;                  /* Minimum width */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  z-index: 1;                        /* Ensure dropdown appears above content */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 0.5rem 1rem;              /* Clickable padding */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #3498db;         /* Highlight on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;                     /* Show dropdown on hover */
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3498db;          /* Highlight button when open */
+}
+
+/* ==================== Hero Section ==================== */
+.hero {
+  display: flex;                     /* Place image and text side by side */
+  flex-direction: row;
+  width: 100vw;                       /* Full viewport width */
+  height: 90vh;                       /* Tall hero section */
+  margin: 5vh 0;                      /* Top/bottom spacing */
+  padding: 0;                          /* No padding; spacing handled elsewhere */
+  overflow: hidden;                   /* Prevent overflow */
+}
+
+.hero-img {
+  width: 48vw;                        /* Take nearly half width */
+  height: 100%;                        /* Fill hero height */
+  margin-left: 2vw;                   /* Gap on left */
+  object-fit: cover;                  /* Image covers container */
+  border-radius: 10px;                /* Rounded corners */
+}
+
+.hero-text {
+  width: 48vw;                        /* Take nearly half width */
+  height: 100%;
+  margin-right: 2vw;                  /* Gap on right */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;        /* Align content to top */
+  align-items: center;                /* Center horizontally */
+  padding: 2rem;                      /* Inner spacing */
+  text-align: center;                 /* Center text inside block */
+  background-color: #fff;             /* White background for text */
+  border-radius: 10px;                /* Rounded corners */
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;                  /* Large title font */
+  margin: 0 0 1rem 0;                 /* Space below heading */
+  color: #004b80;                     /* Dark blue title */
+}
+
+.hero-text p {
+  font-size: 1.2rem;                  /* Paragraph size */
+  line-height: 1.6;                   /* Spacing between lines */
+  color: #333;                         /* Dark gray text for readability */
+  margin-top: 0;
+  max-width: 90%;                      /* Limit line length for easier reading */
+}
+
+/* ==================== Main Content Blocks ==================== */
+main {
+  padding: 1rem;                      /* Space around main content */
+}
+
+.content-block {
+  display: flex;
+  text-align: center;
+  align-items: center;                /* Vertically align items */
+  gap: 1rem;                           /* Space between text and images */
+  margin-bottom: 1rem;                 /* Space below each block */
+}
+
+.content-block img {
+  width: 150px;                        /* Fixed image width */
+  height: auto;                        /* Maintain aspect ratio */
+  border: 2px solid #000;             /* Border around images */
+}
+
+/* ==================== Footer ==================== */
+footer {
+  display: flex;
+  flex-wrap: wrap;                     /* Stack if too small */
+  background-color: #0b3d5c;           /* Match header */
+  color: white;
+  padding: 2rem 1rem;                  /* Footer padding */
+  justify-content: space-around;       /* Evenly space footer columns */
+  gap: 1.5rem;                         /* Space between columns */
+}
+
+footer h3 {
+  font-size: 2rem;                     /* Column title size */
+  margin-top: 0;
+}
+
+footer ul {
+  list-style: none;                    /* Remove bullets */
+  padding: 0;
+  margin: 0.5rem 0 0 0;                /* Space above links */
+}
+
+footer a {
+  font-size: 2rem;                     /* Larger link font */
+  color: white;
+  text-decoration: none;               /* Remove underline */
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;           /* Stack image and text */
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .hero-img, .hero-text {
+    width: 100%;                       /* Full width on small screens */
+    height: auto;
+    margin: 0;
+  }
+
+  .hero-text {
+    padding: 1rem;                     /* Smaller padding for mobile */
+  }
+}

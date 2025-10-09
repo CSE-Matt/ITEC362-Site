@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws Together - News</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    h2 { color: #004b80; }
+    .news-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 3rem 5%;
+      background-color: #f9f9f9;
+    }
+    .news-article {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .news-article:hover {
+      transform: translateY(-5px);
+    }
+    .news-article img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .news-content {
+      padding: 1rem 1.2rem;
+    }
+    .news-content h3 {
+      margin-top: 0;
+      color: #004b80;
+    }
+    .news-content p {
+      color: #333;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">🐾 Paws Together</div>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Pet Care Tips ▾</button>
+        <div class="dropdown-content">
+          <a href="new-owner.html">Becoming a New Owner</a>
+        </div>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="#">Reviews</a>
+      <a href="#">Emergency Care Guide</a>
+      <a href="community-forums.html">Community Forums</a>
+      <a href="news.html">News</a>
+      <input type="text" placeholder="Looking for something?" />
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/pet_news_banner.jpg" alt="Pets and Owners" class="hero-img" />
+    <div class="hero-text">
+      <h2>Paws Together News & Updates</h2>
+      <p>Stay updated with the latest in pet care, inspiring adoption stories, and community highlights from Paws Together.</p>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section">
+    <article class="news-article">
+      <img src="images/adoption_story_1.jpg" alt="Dog adoption story" />
+      <div class="news-content">
+        <h3>From Shelter to Forever Home</h3>
+        <p>Meet Daisy, a rescued lab mix who found her forever home after six months in the shelter. Her story reminds us how patience and love can transform a life.</p>
+      </div>
+    </article>
+
+    <article class="news-article">
+      <img src="images/pet_health_tips.jpg" alt="Pet health tips" />
+      <div class="news-content">
+        <h3>Autumn Pet Health Tips</h3>
+        <p>As temperatures drop, make sure your pets stay warm and hydrated. Avoid leaving them outside for long periods and keep an eye out for seasonal allergies.</p>
+      </div>
+    </article>
+
+    <article class="news-article">
+      <img src="images/community_event.jpg" alt="Community event" />
+      <div class="news-content">
+        <h3>Community Pet Fair Success</h3>
+        <p>Our annual Community Pet Fair saw record attendance this year! Over 30 pets were adopted, and families learned valuable care and training tips.</p>
+      </div>
+    </article>
+
+    <article class="news-article">
+      <img src="images/new_vet_team.jpg" alt="Vet team" />
+      <div class="news-content">
+        <h3>Welcoming Our New Veterinary Partners</h3>
+        <p>We’re proud to announce partnerships with certified veterinarians across the region, expanding our support network for all pet owners in the Paws Together community.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <h3>Essential Site Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Pet Care Tips</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Emergency Care Guide</a></li>
+        <li><a href="community-forums.html">Community Forums</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Helpful Resources</h3>
+      <ul>
+        <li><a href="#">Emergency Vet Helpline</a></li>
+        <li><a href="#">Pet Adoption Resources</a></li>
+        <li><a href="#">Certified Veterinarians</a></li>
+        <li><a href="#">Training and Care Guides</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Site & Legal Links</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Community & Engagement</h3>
+      <ul>
+        <li><a href="#">Newsletter Signup</a></li>
+        <li><a href="#">Social Media Links</a></li>
+        <li><a href="#">Photo Gallery Submission</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

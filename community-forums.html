@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws Together - Community Forums</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    main {
+      padding: 2rem;
+      background-color: #3498db;
+      min-height: 80vh;
+      color: #000;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .form-row input {
+      flex: 1;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 150px;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      resize: vertical;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    .submit-btn {
+      align-self: flex-start;
+      padding: 0.75rem 1.5rem;
+      background-color: #0b3d5c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #004b80;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">🐾 Paws Together</div>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Pet Care Tips ▾</button>
+        <div class="dropdown-content">
+          <a href="new-owner.html">Becoming a New Owner</a>
+        </div>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="#">Reviews</a>
+      <a href="#">Emergency Care Guide</a>
+      <a href="community-forums.html">Community Forums</a>
+      <a href="news.html">News</a>
+      <input type="text" placeholder="Looking for something?" />
+    </nav>
+  </header>
+
+  <!-- Main Forums Form -->
+  <main>
+    <h2>Community Forums</h2>
+    <form>
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="email" name="email" placeholder="Email" />
+        <input type="text" name="pet-type" placeholder="Pet Type" />
+      </div>
+
+      <label for="message">Message Box</label>
+      <textarea id="message" name="message"></textarea>
+
+      <label for="attachments">Attachments</label>
+      <textarea id="attachments" name="attachments"></textarea>
+
+      <button type="submit" class="submit-btn">Post Message</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <h3>Essential Site Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Pet Care Tips</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Emergency Care Guide</a></li>
+        <li><a href="community-forums.html">Community Forums</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Helpful Resources</h3>
+      <ul>
+        <li><a href="#">Emergency Vet Helpline</a></li>
+        <li><a href="#">Pet Adoption Resources</a></li>
+        <li><a href="#">Certified Veterinarians</a></li>
+        <li><a href="#">Training and Care Guides</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Site & Legal Links</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Community & Engagement</h3>
+      <ul>
+        <li><a href="#">Newsletter Signup</a></li>
+        <li><a href="#">Social Media Links</a></li>
+        <li><a href="#">Photo Gallery Submission</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
