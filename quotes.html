@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Austen Random Quotes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-color: #f8f4ec;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #6b4226;
+    }
+    #quote-box {
+      background: #fff;
+      border: 2px solid #d1c4b2;
+      border-radius: 10px;
+      padding: 20px;
+      width: 60%;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    button {
+      background-color: #6b4226;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #8b5e3c;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">🐾 Paws Together</div>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Pet Care Tips ▾</button>
+        <div class="dropdown-content">
+          <a href="new-owner.html">Becoming a New Owner</a>
+        </div>
+      </div>
+      <a href="index.html">Home</a>
+      <a href="#">Reviews</a>
+      <a href="#">Emergency Care Guide</a>
+      <a href="community-forums.html">Community Forums</a>
+      <a href="news.html">News</a>
+      <a href="quotes.html">Random Quotes</a>
+      <input type="text" placeholder="Looking for something?" />
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Jane Austen Random Quotes</h1>
+    <div id="quote-box">
+      <p id="quote-text">Click the button to see a Jane Austen quote.</p>
+    </div>
+    <button id="quote-btn">Show Random Quote</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <h3>Essential Site Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Pet Care Tips</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Emergency Care Guide</a></li>
+        <li><a href="community-forums.html">Community Forums</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="quotes.html">Random Quotes</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Helpful Resources</h3>
+      <ul>
+        <li><a href="#">Emergency Vet Helpline</a></li>
+        <li><a href="#">Pet Adoption Resources</a></li>
+        <li><a href="#">Certified Veterinarians</a></li>
+        <li><a href="#">Training and Care Guides</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Site & Legal Links</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Community & Engagement</h3>
+      <ul>
+        <li><a href="#">Volunteer Opportunities</a></li>
+        <li><a href="#">Pet Stories</a></li>
+        <li><a href="#">Events</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Link JS at the bottom so it loads last -->
+  <script src="quotes.js"></script>
+</body>
+</html>
